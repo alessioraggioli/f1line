@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <h3>{{title}}</h3>
-    <table class="table table-striped">
+    <table class="table table-striped table-sm" v-cloak>
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -11,8 +11,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-bind:for="driver in drivers">
+    <tr v-for="driver in driversJson.list">
       <td>{{driver.id}}</td>
+      <td>{{driver.nick}}</td>
+      <td>{{driver.points}}</td>
+      <td>{{driver.team}}</td>
     </tr>
   </tbody>
     </table>
@@ -31,14 +34,12 @@ export default {
   data() {
     return {
       title: "F1LINE Leaderboard",
-      driverJson: json,
-      drivers: []
+      driversJson: json,
     };
   },
   mounted: function() {
     var self = this;
-    self.drivers = self.driverJson;
-    console.log(self.drivers);
+    console.log(self.driversJson);
   }
 };
 </script>

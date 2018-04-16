@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "id": "1",
+      "nick": "Peppe46",
+      "points": "0",
+      "team": "Ferrari"
+    },
+    {
+      "id": "2",
+      "nick": "Francesco",
+      "points": "0",
+      "team": "Ferrari"
+    },
+    {
+      "id": "3",
+      "nick": "Grevir",
+      "points": "0",
+      "team": "Ferrari"
+    },
+    {
+      "id": "4",
+      "nick": "Haspen",
+      "points": "0",
+      "team": "Ferrari"
+    },
+    {
+      "id": "5",
+      "nick": "FakeMrJKL",
+      "points": "0",
+      "team": "Ferrari"
+    }
+  ]
+}
