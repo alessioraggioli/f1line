@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import json from "./assets/drivers";
 
 new Vue({
