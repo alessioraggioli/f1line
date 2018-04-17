@@ -1,7 +1,17 @@
 import Vue from 'vue'
-import App from './App.vue'
+import json from "./assets/drivers";
 
 new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+  el: "#app",
+  name: "app",
+  data() {
+    return {
+      title: "F1LINE Leaderboard",
+      driversJson: json
+    };
+  },
+  mounted: function() {
+    var self = this;
+    console.log(self.driversJson);
+  }
+});
